@@ -11,7 +11,7 @@ public class UIController : MonoBehaviour {
 	void Start () {
         controller = GameObject.Find("GameController").GetComponent<GameController>();
 
-        playerDeck = controller.getPlayerDeck();
+        //playerDeck = controller.getPlayerDeck();
 
 	}
 	

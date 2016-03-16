@@ -8,7 +8,7 @@ public class Card : MonoBehaviour {
 	public int attack;
 	public element ele;
 	public string unitName;
-	public Sprite cardSprite;
+	public Texture cardTexture;
 	public GameObject prefab;
 
 	// Use this for initialization

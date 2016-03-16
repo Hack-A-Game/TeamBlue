@@ -67,8 +67,7 @@ public class UIController : MonoBehaviour {
         Image card2ST = card2B.GetComponent<Image>();
         nextCardST.sprite = nextCard.cardTexture;
         card1ST.sprite = card1.cardTexture;
-        card2ST.sprite = card2.cardTexture;
-        */
+        card2ST.sprite = card2.cardTexture;*/
 
         /*Texture nextCardST = nextCardB.GetComponent<Texture>();
         Texture card1ST = card1B.GetComponent<Texture>();

@@ -20,8 +20,8 @@ public class GameController : MonoBehaviour {
         playerHand = new ArrayList();
         cpuHand = new ArrayList();
         for (int i = 0; i < 3; i++) {
-            playerHand.Add(deckBuilder.newCard());
-            cpuHand.Add(deckBuilder.newCard());
+            playerHand.Add(deckBuilder.nextCard());
+            cpuHand.Add(deckBuilder.nextCard());
         }
 
 

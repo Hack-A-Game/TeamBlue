@@ -76,7 +76,7 @@ MonoBehaviour:
   attack: 50
   ele: 0
   unitName: Sword Hard
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300024, guid: a147d98f65ec44867b8113d192c7258b, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936
 SpriteRenderer:

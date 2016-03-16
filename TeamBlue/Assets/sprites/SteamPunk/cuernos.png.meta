@@ -1,24 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 161940385be954a5bb841f40212ad1de
-timeCreated: 1458131673
-=======
-guid: 945adb486f586b04ca45579d08813fee
-<<<<<<< HEAD
-timeCreated: 1458133218
->>>>>>> 544173231dda47bccf3e3344dab4579eb5d5dba2
-=======
-timeCreated: 1458137396
->>>>>>> issound
+timeCreated: 1458147931
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: cuernos_fl
-    21300002: cuernos_fc
-    21300004: cuernos_fr
-    21300006: cuernos_bl
-    21300008: cuernos_bc
-    21300010: cuernos_br
+    21300000: cuernos_0
+    21300002: cuernos_1
+    21300004: cuernos_2
+    21300006: cuernos_9
+    21300008: cuernos_10
+    21300010: cuernos_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -65,7 +56,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: cuernos_fl
+    - name: cuernos_0
       rect:
         serializedVersion: 2
         x: 1
@@ -73,21 +64,21 @@ TextureImporter:
         width: 31
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: cuernos_fc
+    - name: cuernos_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 141
         width: 31
         height: 45
-      alignment: 9
-      pivot: {x: 0.51155794, y: 0.49999967}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: cuernos_fr
+    - name: cuernos_2
       rect:
         serializedVersion: 2
         x: 65
@@ -95,10 +86,10 @@ TextureImporter:
         width: 31
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: cuernos_bl
+    - name: cuernos_9
       rect:
         serializedVersion: 2
         x: 2
@@ -106,21 +97,21 @@ TextureImporter:
         width: 30
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: cuernos_bc
+    - name: cuernos_10
       rect:
         serializedVersion: 2
-        x: 33
-        y: 3
+        x: 34
+        y: 2
         width: 30
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: cuernos_br
+    - name: cuernos_11
       rect:
         serializedVersion: 2
         x: 66
@@ -128,7 +119,7 @@ TextureImporter:
         width: 30
         height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     outline: []

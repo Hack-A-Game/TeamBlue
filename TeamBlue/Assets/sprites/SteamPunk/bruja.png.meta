@@ -1,24 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 15b1b7fcc4bd64feb97fdace9c6069a2
-timeCreated: 1458131673
-=======
-guid: 0f6d911b7ea143a4bb141e236fb82671
-<<<<<<< HEAD
-timeCreated: 1458133218
->>>>>>> 544173231dda47bccf3e3344dab4579eb5d5dba2
-=======
-timeCreated: 1458136884
->>>>>>> issound
+timeCreated: 1458147589
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bruja_fl
-    21300002: bruja_fc
-    21300004: bruja_fr
-    21300006: bruja_bl
-    21300008: bruja_bc
-    21300010: bruja_br
+    21300000: bruja_0
+    21300002: bruja_1
+    21300004: bruja_2
+    21300006: bruja_3
+    21300008: bruja_4
+    21300010: bruja_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -44,7 +35,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -65,75 +56,98 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: bruja_fl
+    - name: bruja_0
       rect:
         serializedVersion: 2
-        x: 96
+        x: 95
         y: 95
-        width: 33
-        height: 32
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -14.5, y: 16}
-        - {x: -16.5, y: 12}
-        - {x: -16.5, y: -7}
-        - {x: -10.5, y: -16}
-        - {x: 12.5, y: -16}
-        - {x: 16.5, y: -14}
-        - {x: 16.5, y: 16}
-    - name: bruja_fc
+      - - {x: -11, y: 16.5}
+        - {x: -15, y: 11.5}
+        - {x: -15, y: -11.5}
+        - {x: -11, y: -16.5}
+        - {x: 15, y: -16.5}
+        - {x: 16, y: -10.5}
+        - {x: 16, y: 15.5}
+        - {x: 15, y: 16.5}
+    - name: bruja_1
       rect:
         serializedVersion: 2
-        x: 130
-        y: 95
+        x: 129
+        y: 96
         width: 30
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: bruja_fr
+    - name: bruja_2
       rect:
         serializedVersion: 2
         x: 161
         y: 95
-        width: 31
+        width: 32
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: bruja_bl
+      outline:
+      - - {x: -11, y: 16.5}
+        - {x: -16, y: 13.5}
+        - {x: -16, y: -13.5}
+        - {x: -9, y: -16.5}
+        - {x: 12, y: -16.5}
+        - {x: 16, y: -14.5}
+        - {x: 16, y: 16.5}
+    - name: bruja_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 95
         y: 0
-        width: 31
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: bruja_bc
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 7}
+        - {x: -16, y: -1}
+        - {x: -15, y: -5}
+        - {x: -9, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 16}
+    - name: bruja_4
       rect:
         serializedVersion: 2
-        x: 131
+        x: 129
         y: 0
-        width: 29
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: bruja_br
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 11}
+        - {x: -16, y: -8}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 15, y: -12}
+        - {x: 15, y: 16}
+    - name: bruja_5
       rect:
         serializedVersion: 2
         x: 162
         y: 0
-        width: 31
-        height: 32
+        width: 29
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

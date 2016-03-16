@@ -70,11 +70,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2682d601925522246b5c859818eb29ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 23
+  ID: 24
   cost: 2
   health: 75
   attack: 50
   ele: 0
+  us: 1
   unitName: Sword Medium
   cardTexture: {fileID: 21300024, guid: a147d98f65ec44867b8113d192c7258b, type: 3}
   prefab: {fileID: 156686}

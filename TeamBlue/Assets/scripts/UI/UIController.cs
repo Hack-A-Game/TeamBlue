@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour {
 
@@ -9,12 +10,17 @@ public class UIController : MonoBehaviour {
     public CardPanel card1B;
     public CardPanel card2B;
 
+    public Text goldT;
+    public Text turnT;
+
     public List<Card> playerDeck;
 
     // Use this for initialization
     void Start () {
 
         controller = GameObject.Find("GameController").GetComponent<GameController>();
+        //updateTurn(20, 30);
+        //updateGold();
 
     }
 	
@@ -39,12 +45,29 @@ public class UIController : MonoBehaviour {
         card1B.updatePanel(card1);
         card2B.updatePanel(card2);
 
+        updateGold();
+
     }
 
-    //Method to be called when the player plays a card
-    void playedCard()
+    //Method to update the gold
+    public void updateGold()
     {
-        
+        goldT.text = controller.getPlayerGold(0).ToString();
+
+        playerDeck = controller.getPlayerHand();
+
+        //CARDS
+        Card nextCard = playerDeck[2];
+        Card card1 = playerDeck[0];
+        Card card2 = playerDeck[1];
+
+        card1B.enableCard(card1, controller.getPlayerGold(0), card1B);
+        card2B.enableCard(card2, controller.getPlayerGold(0), card2B);
+    }
+
+    public void updateTurn(int turn, int maxTurn)
+    {
+        turnT.text = turn.ToString()+"/"+maxTurn.ToString();
     }
 
 }

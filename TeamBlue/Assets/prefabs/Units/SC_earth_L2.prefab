@@ -70,12 +70,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2682d601925522246b5c859818eb29ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 25
+  ID: 27
   cost: 2
   health: 75
   attack: 50
   ele: 2
-  unitName: Skeleton N
+  us: 1
+  unitName: Bones Medium
   cardTexture: {fileID: 21300002, guid: a147d98f65ec44867b8113d192c7258b, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

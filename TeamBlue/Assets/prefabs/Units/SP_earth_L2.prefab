@@ -40,7 +40,7 @@ Animator:
   m_GameObject: {fileID: 156686}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3db5263a2874f584d909dbfc14309e5e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -70,13 +70,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2682d601925522246b5c859818eb29ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 17
+  ID: 16
   cost: 2
   health: 75
   attack: 50
   ele: 2
-  unitName: Strong Cuernos
-  cardTexture: {fileID: 21300002, guid: a57aa7739d767064e9a2d6502682e8c5, type: 3}
+  us: 1
+  unitName: Cuernos Medium
+  cardTexture: {fileID: 21300002, guid: 161940385be954a5bb841f40212ad1de, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936
 SpriteRenderer:
@@ -104,7 +105,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: a57aa7739d767064e9a2d6502682e8c5, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 161940385be954a5bb841f40212ad1de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

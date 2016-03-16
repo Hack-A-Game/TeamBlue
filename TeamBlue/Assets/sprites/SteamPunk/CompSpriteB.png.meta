@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 418554d0d8cb044cc8f5f9b411237156
-timeCreated: 1458131673
-=======
-guid: a03af25e91725914b99ff5ca8cc24c89
-timeCreated: 1458133218
->>>>>>> 544173231dda47bccf3e3344dab4579eb5d5dba2
+timeCreated: 1458147795
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: trobador_0
+    21300002: trobador_1
+    21300004: trobador_2
+    21300006: trobador_3
+    21300008: trobador_4
+    21300010: trobador_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,8 +35,8 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -43,7 +44,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +55,73 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: trobador_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 105
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: trobador_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 105
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: trobador_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 105
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: trobador_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: trobador_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: trobador_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

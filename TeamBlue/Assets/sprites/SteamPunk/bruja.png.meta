@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 15b1b7fcc4bd64feb97fdace9c6069a2
-timeCreated: 1458131673
-=======
-guid: 0f6d911b7ea143a4bb141e236fb82671
-timeCreated: 1458133218
->>>>>>> 544173231dda47bccf3e3344dab4579eb5d5dba2
+timeCreated: 1458147589
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bruja_0
+    21300002: bruja_1
+    21300004: bruja_2
+    21300006: bruja_3
+    21300008: bruja_4
+    21300010: bruja_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +36,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -43,7 +44,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,7 +55,103 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: bruja_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16.5}
+        - {x: -15, y: 11.5}
+        - {x: -15, y: -11.5}
+        - {x: -11, y: -16.5}
+        - {x: 15, y: -16.5}
+        - {x: 16, y: -10.5}
+        - {x: 16, y: 15.5}
+        - {x: 15, y: 16.5}
+    - name: bruja_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 96
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bruja_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 95
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16.5}
+        - {x: -16, y: 13.5}
+        - {x: -16, y: -13.5}
+        - {x: -9, y: -16.5}
+        - {x: 12, y: -16.5}
+        - {x: 16, y: -14.5}
+        - {x: 16, y: 16.5}
+    - name: bruja_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -16, y: 7}
+        - {x: -16, y: -1}
+        - {x: -15, y: -5}
+        - {x: -9, y: -16}
+        - {x: 13, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 16}
+    - name: bruja_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -16, y: 11}
+        - {x: -16, y: -8}
+        - {x: -12, y: -16}
+        - {x: 12, y: -16}
+        - {x: 15, y: -12}
+        - {x: 15, y: 16}
+    - name: bruja_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -6,6 +6,8 @@ public class Unit : MonoBehaviour {
 	private int hp;
 	private int maxHp;
 	private element ele;
+	public GameObject healthBarPrefab;
+	private GameObject healthBar;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +16,8 @@ public class Unit : MonoBehaviour {
 		maxHp = card.health;
 		hp = maxHp;
 		ele = card.ele;
+
+		healthBar = (GameObject)Instantiate(healthBarPrefab, transform.position + transform.up / 2, Quaternion.identity);
 	}
 
 	public int getDamageAgainst(GameObject enemy)
@@ -38,8 +42,14 @@ public class Unit : MonoBehaviour {
 		return (int)Mathf.Ceil(attack * multiplier);
 	}
 
+	void update ()
+	{
+		healthBar.transform.position = transform.position + transform.up / 2;
+	}
+
 	public bool damage(int damage)
 	{
+		healthBar.transform.localScale = new Vector3(hp / maxHp, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
 		hp -= damage;
 		if (hp < 0)
 		{

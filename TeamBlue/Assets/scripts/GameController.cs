@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class GameController : MonoBehaviour {
-	private Deck deckPlayer;
-	private Deck deckCPU;
 
 	// Use this for initialization
 	void Start () {

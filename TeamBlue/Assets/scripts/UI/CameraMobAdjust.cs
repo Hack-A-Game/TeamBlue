@@ -10,6 +10,7 @@ public class CameraMobAdjust : MonoBehaviour {
 
         Cam1.aspect = (Screen.currentResolution.width / Screen.currentResolution.height);
         //This would stretch the game scene in order to adjust it to the Device's screen
+        Cam1.transform.Rotate(0, 0, 90, Space.Self);
 
     }
 	

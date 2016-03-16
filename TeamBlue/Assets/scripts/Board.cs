@@ -106,12 +106,17 @@ public class Board : MonoBehaviour {
 
 	public bool attack(GameObject attacker, GameObject defender){
 		int dmg = (defender.GetComponent<Unit>()).getDamageAgainst (attacker);
-		return (defender.GetComponent<Unit>()).damage (dmg);
+		if ((defender.GetComponent<Unit> ()).damage (dmg)) {
+			Destroy (defender);
+			return true;
+		}
+		return false;
 
 	}
 
 	public void killPosition(int position){
 		popCard (position);
+
 	}
 
 
@@ -136,6 +141,12 @@ public class Board : MonoBehaviour {
 
 	}
 
+	public int finish(){
+		int last = slots.Length - 1;
+		return (slots [last] != null && cardPlayerID[last] == PLAYER1) ?
+			PLAYER1 : (slots [0] != null  && cardPlayerID[0] == PLAYER2) ? PLAYER2 : -1;
+
+	}
 	
 	// Update is called once per frame
 	void Update () {

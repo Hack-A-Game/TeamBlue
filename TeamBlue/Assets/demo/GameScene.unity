@@ -561,6 +561,8 @@ MonoBehaviour:
   nextCardB: {fileID: 936254732}
   card1B: {fileID: 2019145214}
   card2B: {fileID: 1995438392}
+  goldT: {fileID: 0}
+  turnT: {fileID: 0}
   playerDeck: []
 --- !u!1 &795002528 stripped
 GameObject:
@@ -577,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1fa410a621c1e4892ad3544e0a055e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxTurns: 20
   uiController: {fileID: 764367961}
   board: {fileID: 1890068835}
   action: 0
@@ -730,6 +733,7 @@ MonoBehaviour:
   healthT: {fileID: 420823490}
   attackT: {fileID: 2070550601}
   typeT: {fileID: 856037078}
+  coverS: {fileID: 0}
 --- !u!114 &1042364429 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11428822, guid: cf1056d9c742ed043a49019d049fecea,
@@ -745,7 +749,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
       propertyPath: cardProbabilities.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 494370, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
       propertyPath: m_LocalPosition.x
@@ -782,7 +786,7 @@ Prefab:
     - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
       propertyPath: cardProbabilities.Array.data[0].unit
       value: 
-      objectReference: {fileID: 156686, guid: e2cb97c2be79d4de6ab2b43c440675ad, type: 2}
+      objectReference: {fileID: 156686, guid: 44ffa82e0f63b4f2c967e1ea8af9b329, type: 2}
     - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
       propertyPath: cardProbabilities.Array.data[0].prob
       value: 2
@@ -1469,6 +1473,7 @@ MonoBehaviour:
   healthT: {fileID: 556614036}
   attackT: {fileID: 12256891}
   typeT: {fileID: 1392836047}
+  coverS: {fileID: 0}
 --- !u!1 &2019145209 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 191198, guid: cf1056d9c742ed043a49019d049fecea, type: 2}
@@ -1494,6 +1499,7 @@ MonoBehaviour:
   healthT: {fileID: 1694204885}
   attackT: {fileID: 1897754688}
   typeT: {fileID: 1042364429}
+  coverS: {fileID: 0}
 --- !u!114 &2070550601 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11435424, guid: ad94b2011fbe288458eb219f03f72e02,

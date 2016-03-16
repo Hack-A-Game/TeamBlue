@@ -1,33 +1,30 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class GameController : MonoBehaviour {
 
-    private ArrayList playerHand;
-	private ArrayList cpuHand;
+    private List<Card> playerHand;
+	private List<Card> cpuHand;
 
     private DeckBuilder deckBuilder;
 
-    private UIController uiController;
-
-    private Board board;
+    public UIController uiController;
+    public Board board;
 
 	// Use this for initialization
 	void Start () {
         // Init the game
-        uiController = GameObject.Find("GameUI").GetComponent<UIController>();
-        board = GameObject.Find("Board").GetComponent<Board>();
         deckBuilder = GetComponent<DeckBuilder>();
 
         // Inint player hands
-        playerHand = new ArrayList();
-        cpuHand = new ArrayList();
+        playerHand = new List<Card>();
+        cpuHand = new List<Card>();
         for (int i = 0; i < 3; i++) {
             playerHand.Add(deckBuilder.nextCard());
             cpuHand.Add(deckBuilder.nextCard());
         }
 
-        //uiController.updateCards();
+        uiController.updateCards();
 	}
 
     // Returns true if a player can play a card
@@ -43,36 +40,26 @@ public class GameController : MonoBehaviour {
     }
 
     // Returns the Human Player hand
-    public ArrayList getPlayerHand() {
+    public List<Card> getPlayerHand() {
         return playerHand;
     }
 
-    // Plays a card from a player
-    public void playCard(GameObject card, int player) {
+    // Plays a card from the player hands
+    public void playPlayerCard(int cardIndex) {
 
-        if (canPlayCard(player)) {
-            switch (player) {
-                case 0:
-                    // player 1
-                    board.addCard(card, 0);
-                    break;
-                case 1:
-                    // player 2
-                    board.addCard(card, board.maxCards-1);
-                    break;
-                default:
-                    return;
-            }
+        if (canPlayCard(0)) {
+			GameObject unit = (GameObject)Instantiate(playerHand[cardIndex].prefab, Vector3.zero, Quaternion.identity);
+			unit.transform.localScale = new Vector3(5, 5, 1);
+			board.addCard(unit, 0);
         }
 
         board.repositionCards();
     }
+	
 
     // Advance to the next turn
     public void advanceTurn() {
-        GameObject[] cards = board.getAllCards();
-
-        
+        GameObject[] cards = board.getAllCards();      
     }
 	
 	// Update is called once per frame

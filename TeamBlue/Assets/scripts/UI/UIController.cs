@@ -21,7 +21,7 @@ public class UIController : MonoBehaviour {
     void Start () {
         //controller = GameObject.Find("GameController").GetComponent<GameController>();
 
-        playerDeck = new List<Card>();
+        //playerDeck = new List<Card>();
         //playerDeck = gameController.getPlayerHand();
 
         /*//TEST
@@ -43,19 +43,21 @@ public class UIController : MonoBehaviour {
     //Method to be called at the start of every player turn
     public void updateCards()
     {
-        //CARDS
-        Card nextCard = playerDeck[2];
+		playerDeck = controller.getPlayerHand();
+
+		//CARDS
+		Card nextCard = playerDeck[2];
         Card card1 = playerDeck[0];
         Card card2 = playerDeck[1];
 
         //TEXT SETTING
-        Text nextCardT = nextCardB.GetComponentInChildren<Text>();
+        //Text nextCardT = nextCardB.GetComponentInChildren<Text>();
         Text card1T = card1B.GetComponentInChildren<Text>();
         Text card2T = card2B.GetComponentInChildren<Text>();
         string nextCardS = nextCard.unitName +"\n"+"Cost: "+nextCard.cost+"\n"+"Health: "+nextCard.health+"\n"+"Attack: "+nextCard.attack;
         string card1S = card1.unitName + "\n" + "Cost: " + card1.cost + "\n" + "Health: " + card1.health + "\n" + "Attack: " + card1.attack;
         string card2S = card2.unitName + "\n" + "Cost: " + card2.cost + "\n" + "Health: " + card2.health + "\n" + "Attack: " + card2.attack;
-        nextCardT.text = nextCardS;
+        //nextCardT.text = nextCardS;
         card1T.text = card1S;
         card2T.text = card2S;
 

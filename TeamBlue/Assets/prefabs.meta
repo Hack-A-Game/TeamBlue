@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2a0e24b574896d04e86e48970a354b07
 folderAsset: yes
 timeCreated: 1458119574
+=======
+guid: c88663843451eab4c907183484c87cab
+folderAsset: yes
+timeCreated: 1458117708
+>>>>>>> feature/carta
 licenseType: Free
 DefaultImporter:
   userData: 

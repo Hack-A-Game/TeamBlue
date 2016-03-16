@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour {
             cpuHand.Add(deckBuilder.nextCard());
         }
 
-        uiController.updateCards();
+        //uiController.updateCards();
 	}
 
     // Returns true if a player can play a card
@@ -64,6 +64,15 @@ public class GameController : MonoBehaviour {
                     return;
             }
         }
+
+        board.repositionCards();
+    }
+
+    // Advance to the next turn
+    public void advanceTurn() {
+        GameObject[] cards = board.getAllCards();
+
+        
     }
 	
 	// Update is called once per frame

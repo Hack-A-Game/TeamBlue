@@ -1,39 +1,55 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Grid : MonoBehaviour {
+public class Board : MonoBehaviour {
 
     public int maxCards = 8;
 
-    private Object[] slots;
+    // Board size in game units
+    public float boardSize = 8;
+
+    private GameObject[] slots;
     private int usedSlots;
 
     // Use this for initialization
     void Start () {
-        slots = new Object[maxCards];
+        usedSlots = 0;
+        slots = new GameObject[maxCards];
+
+        GameObject card = GameObject.Find("Card1");
+
+        addCard(card, 7);
+
+        repositionCards();
+
 	}
 
-    // Add a card to the board, player is 0 for player 1 and 1 for player 2
-    public bool addCard(Object card, int player) {
+    // Called after changing cards in the board
+    public void repositionCards() {
+        float step = boardSize / maxCards;
 
-        if (usedSlots >= maxCards)
+        float cardPos = 0;
+        for (int i = 0; i < maxCards; i++) {
+            if (slots[i] == null)
+                continue;
+
+            GameObject card = slots[i];            
+            var pos = card.transform.position;
+            card.transform.position = new Vector3(0, cardPos, 0);
+
+            Debug.Log("Placed card" + card.ToString() + "at pos" + cardPos);
+
+            cardPos += step;
+        }
+    }
+
+    // Add a card to the board, player is 0 for player 1 and 1 for player 2
+    public bool addCard(GameObject card, int pos) {
+
+        if (usedSlots >= maxCards || slots[pos] != null) 
             return false;
 
-        if(player == 0) {
-            // Player 1
-            int i = 0;
-            while (slots[i] != null)
-                i++;
-            slots[i] = card;
-        }
-        else if (player == 1) {
-            // Player 1
-            int i = maxCards-1;
-            while (slots[i] != null)
-                i--;
-            slots[i] = card;
-        }
-
+        slots[pos] = card;
         return true;
     }
 
@@ -41,17 +57,19 @@ public class Grid : MonoBehaviour {
     public bool removeCard(int pos) {
         if(slots[pos] != null) {
             slots[pos] = null;
+
+            usedSlots -= 1;
             return true;
         }
         return false;
     }
 
     // Returns the card at a certain position
-    public Object cardAt(int pos) {
+    public GameObject cardAt(int pos) {
         return slots[pos];
     }
 
-    public Object[] getAllCards() {
+    public GameObject[] getAllCards() {
         return slots;
     }
 

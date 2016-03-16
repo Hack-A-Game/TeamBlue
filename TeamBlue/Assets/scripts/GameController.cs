@@ -8,11 +8,14 @@ public class GameController : MonoBehaviour {
 
     private DeckBuilder deckBuilder;
 
+    private UIController uiController;
+
     private Board board;
 
 	// Use this for initialization
 	void Start () {
-
+        // Init the game
+        uiController = GameObject.Find("GameUI").GetComponent<UIController>();
         board = GameObject.Find("Board").GetComponent<Board>();
         deckBuilder = GetComponent<DeckBuilder>();
 
@@ -24,7 +27,7 @@ public class GameController : MonoBehaviour {
             cpuHand.Add(deckBuilder.newCard());
         }
 
-
+        uiController.updateCards();
 	}
 
     // Returns true if a player can play a card
@@ -39,8 +42,28 @@ public class GameController : MonoBehaviour {
         }
     }
 
+    // Returns the Human Player hand
     public ArrayList getPlayerHand() {
         return playerHand;
+    }
+
+    // Plays a card from a player
+    public void playCard(GameObject card, int player) {
+
+        if (canPlayCard(player)) {
+            switch (player) {
+                case 0:
+                    // player 1
+                    board.addCard(card, 0);
+                    break;
+                case 1:
+                    // player 2
+                    board.addCard(card, board.maxCards-1);
+                    break;
+                default:
+                    return;
+            }
+        }
     }
 	
 	// Update is called once per frame

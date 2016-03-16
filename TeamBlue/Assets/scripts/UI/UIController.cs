@@ -32,6 +32,7 @@ public class UIController : MonoBehaviour {
     //Method to be called at the start of every player turn
     public void updateCards()
     {
+		Debug.Log (controller);
 
         playerDeck = controller.getPlayerHand();
 

@@ -70,12 +70,15 @@ public class GameController : MonoBehaviour
 	
 	public void doAction(int opt){
 		
+
+		
+		if (advanceTurn() != -1) Application.LoadLevel("demo/MainScene");;
+
+		board.attackPhase (0);
+
 		/**
 		* Player 1 turn
 		*/
-		
-		advanceTurn();
-		
 		switch(this.action){
 		case ACTION_PLAY_CARD:
 			playCard (opt, PLAYER1);
@@ -104,7 +107,7 @@ public class GameController : MonoBehaviour
 		
 		// Repaint the cards
 		uiController.updateCards();
-		board.attackPhase (0);
+
 		board.repositionCards();
 		
 		
@@ -132,21 +135,7 @@ public class GameController : MonoBehaviour
 	}
 	
 	
-	// Plays a card from the player hands
-	public void playPlayerCard(int cardIndex)
-	{
-		if (playCard(cardIndex, PLAYER1))
-		{
-			
-			playCard(cardIndex, PLAYER1);
-			if (!playCard(0, PLAYER2)) goldPerPlayer[PLAYER2] ++;
-			
-			advanceTurn();
-			
-			uiController.updateCards();
-			board.repositionCards();
-		}
-	}
+
 	
 	
 	public bool playCard(int cardIndex, int playerID)
@@ -194,75 +183,39 @@ public class GameController : MonoBehaviour
 	{
 		goldPerPlayer[PLAYER1]++;
 	}
-	// Advance to the next turn
-	public void advanceTurn()
-	{
-		bool victory = false;
-		bool defeat = false;
-		bool draw = false;
-		int minEnemy = board.maxCards;
-		int maxPlayer = -1;
-		
-		GameObject[] units = board.getAllCards();
-		
-		bool hasMoved = true;
-		List<int> moved = new List<int>();
-		
-		while (hasMoved)
-		{
-			hasMoved = false;
-			for (int i = 0; i < units.Length; i++)
-			{
-				// TODO Check for enemy
-				
-				if (units[i] == null || moved.Contains(i))
-					continue;
-				
-				int unitPlayerID = board.getPlayerIDAt(i);
-				
-				int dir = 1;
-				if (unitPlayerID == PLAYER2) { }
-				dir = -1;
-				
-				if (units[i + dir] == null)
-				{
-					GameObject cardobj = board.popCard(i);
-					board.putCard(cardobj, i + dir, unitPlayerID);
-					// Tag the newly moved card as moved
-					moved.Add(i + dir);
-					if (lastTurn())
-					{
-						if (unitPlayerID == 0) maxPlayer = Mathf.Max(i + dir, maxPlayer);
-						if (unitPlayerID == 1) minEnemy = Mathf.Min(i + dir, minEnemy);
-					}
-					
-					if (i + 2 * dir == -1) defeat = true;
-					if (i + 2 * dir == board.maxCards) victory = true;
-					// reset loop frag and restart loop
-					hasMoved = true;
-					break;
-				}
-			}
-		}
-		turn++;
-		uiController.updateTurn(turn, maxTurns);
-		
-		goldPerPlayer[PLAYER1]++;
-		goldPerPlayer[PLAYER2]++;
-		uiController.updateGold();
-		
-		if (lastTurn())
-		{
-			victory = board.maxCards - 1 - minEnemy > maxPlayer;
-			defeat = board.maxCards - 1 - minEnemy > maxPlayer;
-			draw = board.maxCards - 1 - minEnemy == maxPlayer;
-		}
-		
-		if (victory) endGame(1);
-		if (defeat) endGame(-1);
-		if (draw) endGame(0);
-	}
+	public int advanceTurn() {
+		       GameObject[] units = board.getAllCards();
+
+		       bool hasMoved = true;
+	       List<int> moved = new List<int>();
+
+		   while (hasMoved) {
+	            hasMoved = false;
+	           for (int i = 0; i < units.Length; i++) {
+		               // TODO Check for enemy
 	
+		                if (units[i] == null || moved.Contains(i))
+			                    continue;
+		
+		                int unitPlayerID = board.getPlayerIDAt(i);
+
+		                int dir = 1;
+		                if (unitPlayerID == PLAYER2)
+			                    dir = -1;
+		                
+		                if(units[i + dir] == null) {
+			                    GameObject cardobj = board.popCard(i);
+			                    board.putCard(cardobj, i + dir, unitPlayerID);
+			                    // Tag the newly moved card as moved
+			                   moved.Add(i + dir);
+			                    // reset loop frag and restart loop
+			                    hasMoved = true;
+			                    break;
+			                }
+		            }
+	        }
+		return board.finish();
+	}
 	private void endGame(int v)
 	{
 		print(v);

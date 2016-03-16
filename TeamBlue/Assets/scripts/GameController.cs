@@ -8,6 +8,13 @@ public class GameController : MonoBehaviour {
     // CPU Player
     public const int PLAYER2 = 1;
 
+
+	public const int ACTION_PLAY_CARD = 3;
+	public const int ACTION_SKIP = 4;
+	public const int ACTION_SWITCH = 5;
+
+
+
     // Gold each player has
     private int[] goldPerPlayer;
 
@@ -17,6 +24,8 @@ public class GameController : MonoBehaviour {
     private DeckBuilder deckBuilder;
     public UIController uiController;
     public Board board;
+
+	public int action;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +51,53 @@ public class GameController : MonoBehaviour {
         return goldPerPlayer[player];
     }
 
+
+	public void setAction(int action){
+		this.action = action;
+	}
+
+
+
+	public void doAction(int opt){
+
+		/**
+		 * Player 1 turn
+		 */
+
+		advanceTurn();
+
+		switch(this.action){
+		case ACTION_PLAY_CARD:
+			playCard (opt, PLAYER1);
+
+			break;
+		case ACTION_SKIP:
+			// Do Nothing
+
+			break;
+		case ACTION_SWITCH:
+			
+			break;
+		default:
+			// Shouldn't come into here
+			return;
+		}
+
+		/**
+		 * Player 2 turn
+		 */
+		if (Random.value > 0.5)playCard(0, PLAYER2);
+
+		/**
+		 *  PostTurn Actions
+		 */
+
+		uiController.updateCards();
+		board.repositionCards();
+
+
+	}
+
     // Returns true if a player can play a card
     public bool canPlayCard(int player) {
         switch (player) {
@@ -57,23 +113,6 @@ public class GameController : MonoBehaviour {
     // Returns the Human Player hand
     public List<Card> getPlayerHand() {
         return playerHand;
-    }
-
-    // Plays a card from the player hands
-    public void playPlayerCard(int cardIndex) {
-
-        if(playCard(cardIndex, PLAYER1)) {
-
-            playCard(cardIndex, PLAYER1);
-            playCard(0, PLAYER2);
-            advanceTurn();
-
-            uiController.updateCards();
-
-
-            board.repositionCards();
-        }
-
     }
 
 	public bool playCard(int cardIndex, int playerID) {

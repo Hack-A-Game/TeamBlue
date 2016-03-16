@@ -75,7 +75,8 @@ MonoBehaviour:
   health: 50
   attack: 25
   ele: 1
-  unitName: Joglar
+  us: 0
+  unitName: Joglar Novel
   cardTexture: {fileID: 21300002, guid: a03af25e91725914b99ff5ca8cc24c89, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

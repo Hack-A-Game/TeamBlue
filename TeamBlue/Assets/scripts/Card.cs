@@ -7,6 +7,7 @@ public class Card : MonoBehaviour {
 	public int health;
 	public int attack;
 	public element ele;
+	public unitSize us;
 	public string unitName;
 	public Sprite cardTexture;
 	public GameObject prefab;
@@ -23,3 +24,4 @@ public class Card : MonoBehaviour {
 }
 
 public enum element { water, fire, earth, neutral };
+public enum unitSize { ligth, medium, heavy, gigant };

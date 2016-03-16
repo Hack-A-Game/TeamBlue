@@ -75,7 +75,8 @@ MonoBehaviour:
   health: 75
   attack: 50
   ele: 0
-  unitName: Strong Witch
+  us: 1
+  unitName: Witch Medium
   cardTexture: {fileID: 21300002, guid: 0f6d911b7ea143a4bb141e236fb82671, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

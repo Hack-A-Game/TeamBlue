@@ -75,7 +75,8 @@ MonoBehaviour:
   health: 125
   attack: 50
   ele: 1
-  unitName: Laser Novel
+  us: 2
+  unitName: Laser Hard
   cardTexture: {fileID: 0}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

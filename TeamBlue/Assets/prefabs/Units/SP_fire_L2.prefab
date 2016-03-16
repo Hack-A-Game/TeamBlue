@@ -75,7 +75,8 @@ MonoBehaviour:
   health: 75
   attack: 50
   ele: 1
-  unitName: Strong Juglar
+  us: 1
+  unitName: Juglar Medium
   cardTexture: {fileID: 21300002, guid: a03af25e91725914b99ff5ca8cc24c89, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

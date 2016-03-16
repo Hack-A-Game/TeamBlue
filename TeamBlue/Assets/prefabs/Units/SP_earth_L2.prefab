@@ -75,7 +75,8 @@ MonoBehaviour:
   health: 75
   attack: 50
   ele: 2
-  unitName: Strong Cuernos
+  us: 1
+  unitName: Cuernos Medium
   cardTexture: {fileID: 21300002, guid: 945adb486f586b04ca45579d08813fee, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

@@ -75,7 +75,8 @@ MonoBehaviour:
   health: 125
   attack: 50
   ele: 0
-  unitName: Super Witch
+  us: 2
+  unitName: Witch Hard
   cardTexture: {fileID: 21300002, guid: 0f6d911b7ea143a4bb141e236fb82671, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

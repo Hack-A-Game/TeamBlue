@@ -1,15 +1,18 @@
 fileFormatVersion: 2
-guid: 0f6d911b7ea143a4bb141e236fb82671
-timeCreated: 1458136884
+guid: d5a7adb51f0ea4a94b7495144db81ad3
+timeCreated: 1458143935
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: bruja_fl
-    21300002: bruja_fc
-    21300004: bruja_fr
-    21300006: bruja_bl
-    21300008: bruja_bc
-    21300010: bruja_br
+    21300000: monstros_0
+    21300002: monstros_1
+    21300004: monstros_2
+    21300006: monstros_3
+    21300008: monstros_4
+    21300010: monstros_5
+    21300012: monstros_6
+    21300014: monstros_7
+    21300016: monstros_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +38,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -56,75 +59,101 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: bruja_fl
+    - name: monstros_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 95
-        width: 33
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -14.5, y: 16}
-        - {x: -16.5, y: 12}
-        - {x: -16.5, y: -7}
-        - {x: -10.5, y: -16}
-        - {x: 12.5, y: -16}
-        - {x: 16.5, y: -14}
-        - {x: 16.5, y: 16}
-    - name: bruja_fc
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 95
+        x: 89
+        y: 216
         width: 30
-        height: 33
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: bruja_fr
+    - name: monstros_1
       rect:
         serializedVersion: 2
-        x: 161
-        y: 95
-        width: 31
-        height: 33
+        x: 121
+        y: 216
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: bruja_bl
+    - name: monstros_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: bruja_bc
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 0
+        x: 153
+        y: 216
         width: 29
-        height: 32
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: bruja_br
+    - name: monstros_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 0
-        width: 31
-        height: 32
+        x: 91
+        y: 181
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: monstros_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 181
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: monstros_5
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 111
+        width: 28
+        height: 34
+      alignment: 9
+      pivot: {x: 0.22421438, y: -0.13845241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: monstros_6
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 146
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: monstros_7
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 111
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: monstros_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 111
+        width: 28
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -75,7 +75,8 @@ MonoBehaviour:
   health: 50
   attack: 25
   ele: 2
-  unitName: Skeleton N
+  us: 0
+  unitName: Skeleton Novel
   cardTexture: {fileID: 0}
   prefab: {fileID: 156686}
 --- !u!212 &21202936

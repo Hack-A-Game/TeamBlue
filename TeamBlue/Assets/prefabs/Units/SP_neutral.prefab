@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11496768}
   - 95: {fileID: 9591154}
   m_Layer: 0
-  m_Name: SP_fire_L3
+  m_Name: SP_neutral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,7 +40,7 @@ Animator:
   m_GameObject: {fileID: 156686}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 73e194b5abdbce042a8a012fd11626a9, type: 2}
+  m_Controller: {fileID: 9100000, guid: ed1c63a03014642c4be697ac6cb65344, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -70,14 +70,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2682d601925522246b5c859818eb29ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 15
-  cost: 3
-  health: 125
-  attack: 50
-  ele: 1
-  us: 2
-  unitName: Joglar Hard
-  cardTexture: {fileID: 21300002, guid: a03af25e91725914b99ff5ca8cc24c89, type: 3}
+  ID: 3
+  cost: 7
+  health: 200
+  attack: 90
+  ele: 3
+  us: 3
+  unitName: Final Monster
+  cardTexture: {fileID: 21300014, guid: 7a371d3bee2d64c06a1a906da5f4ba5c, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936
 SpriteRenderer:
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: a03af25e91725914b99ff5ca8cc24c89, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 7a371d3bee2d64c06a1a906da5f4ba5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

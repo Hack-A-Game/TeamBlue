@@ -254,6 +254,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 494370, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.5647836
@@ -294,6 +302,166 @@ Prefab:
       propertyPath: board
       value: 
       objectReference: {fileID: 2061458929}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[0].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 26cef943684dd244b9053814024aeac5, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[1].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 4bc6355dbca793a48b71fed0b1dd62a2, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[2].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 5c4f9f1d9ea0d8744bd4ad6678ab3ac2, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[3].unit
+      value: 
+      objectReference: {fileID: 156686, guid: c6f2fe08f7ad9284a9cfdffd4ad55532, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[4].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 666111b0349f970469ba1d31dd448e7a, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[5].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 38ca19b10504fc5428ada07dfc8b43ef, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[6].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 275c1b660f3e13045a7f2e9924ddb3c9, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[7].unit
+      value: 
+      objectReference: {fileID: 156686, guid: b322c4c3998b3ba478d0d715d2894d3b, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[8].unit
+      value: 
+      objectReference: {fileID: 156686, guid: f51a06f8260d3f5428b86eb49769359f, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[9].unit
+      value: 
+      objectReference: {fileID: 156686, guid: c3625fb586fcc4fde99987df5fe4cf2c, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[0].prob
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[1].prob
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[2].prob
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[3].prob
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[4].prob
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[5].prob
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[6].prob
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[7].prob
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[8].prob
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSP.Array.data[9].prob
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[0].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 5a964506809655d49b39c7cd43be853b, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[1].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 74cebdd554222f347b68c677717e50c2, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[2].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 0af03666e66fbec48a9d448e64869df6, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[3].unit
+      value: 
+      objectReference: {fileID: 156686, guid: f30d681ee776a48faa8fc8255e0fc91c, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[4].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 5e8fb5a1f53ef8845b76768667289517, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[5].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 76bc3bccb254c5c42aed94f7bb5117ee, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[6].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 44ffa82e0f63b4f2c967e1ea8af9b329, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[7].unit
+      value: 
+      objectReference: {fileID: 156686, guid: 54cc9d6cbd5224bbfb112ed38bdf6fe6, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[8].unit
+      value: 
+      objectReference: {fileID: 156686, guid: ff62bd756fb6c440781d140db3b89f50, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[9].unit
+      value: 
+      objectReference: {fileID: 156686, guid: f994d94a706304571bd45d5b7b952604, type: 2}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[0].prob
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[1].prob
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[2].prob
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[3].prob
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[4].prob
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[5].prob
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[6].prob
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[7].prob
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[8].prob
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444036, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
+      propertyPath: cardProbabilitiesSF.Array.data[9].prob
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0abcd8d1ac7c56d4891a52a27f2b83fc, type: 2}
   m_IsPrefabParent: 0

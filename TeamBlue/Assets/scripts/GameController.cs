@@ -69,10 +69,15 @@ public class GameController : MonoBehaviour
 	
 	
 	public void doAction(int opt){
-		
 
-		
-		if (advanceTurn() != -1) Application.LoadLevel("demo/MainScene");;
+
+
+        int res = advanceTurn();
+
+        if (res == 1)
+            Application.LoadLevel("demo/Defeat"); 
+        if(res == 0)
+            Application.LoadLevel("demo/Victory");
 
 		board.attackPhase (0);
 
@@ -185,39 +190,48 @@ public class GameController : MonoBehaviour
 	{
 		goldPerPlayer[PLAYER1]++;
 	}
-	public int advanceTurn() {
-		       GameObject[] units = board.getAllCards();
+    public int advanceTurn() {
+        GameObject[] units = board.getAllCards();
 
-		       bool hasMoved = true;
-	       List<int> moved = new List<int>();
+        bool hasMoved = true;
+        List<int> moved = new List<int>();
 
-		   while (hasMoved) {
-	            hasMoved = false;
-	           for (int i = 0; i < units.Length; i++) {
-		               // TODO Check for enemy
-	
-		                if (units[i] == null || moved.Contains(i))
-			                    continue;
-		
-		                int unitPlayerID = board.getPlayerIDAt(i);
+        while (hasMoved) {
+            hasMoved = false;
+            for (int i = 0; i < units.Length; i++) {
+                // TODO Check for enemy
 
-		                int dir = 1;
-		                if (unitPlayerID == PLAYER2)
-			                    dir = -1;
-		                
-		                if(units[i + dir] == null) {
-			                    GameObject cardobj = board.popCard(i);
-			                    board.putCard(cardobj, i + dir, unitPlayerID);
-			                    // Tag the newly moved card as moved
-			                   moved.Add(i + dir);
-			                    // reset loop frag and restart loop
-			                    hasMoved = true;
-			                    break;
-			                }
-		            }
-	        }
-		return board.finish();
-	}
+                if (units[i] == null || moved.Contains(i))
+                    continue;
+
+                int unitPlayerID = board.getPlayerIDAt(i);
+
+                int dir = 1;
+                if (unitPlayerID == PLAYER2)
+                    dir = -1;
+
+                if (i + dir >= board.maxCards) {
+                    
+                    return 0;
+                }
+
+                if(i + dir < 0) {
+                    return 1;
+                }
+
+                if (units[i + dir] == null) {
+                    GameObject cardobj = board.popCard(i);
+                    board.putCard(cardobj, i + dir, unitPlayerID);
+                    // Tag the newly moved card as moved
+                    moved.Add(i + dir);
+                    // reset loop frag and restart loop
+                    hasMoved = true;
+                    break;
+                }
+            }
+        }
+        return board.finish();
+    }
 	private void endGame(int v)
 	{
 		print(v);

@@ -42,7 +42,7 @@ public class Board : MonoBehaviour {
 
             GameObject card = slots[i];            
             var xPos = transform.position.x;
-            float yPos = transform.position.y - boardSize / 2 + i * step;
+            float yPos = transform.position.y - boardSize / 2 + i * step +0.5f;
             card.transform.position = new Vector3(xPos, yPos, 0);
 
             //Debug.Log("Placed card" + card.ToString() + "at pos" + ypos);

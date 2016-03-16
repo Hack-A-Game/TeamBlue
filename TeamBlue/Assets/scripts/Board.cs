@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Board : MonoBehaviour {
 
+
+
     public int maxCards = 8;
 
     // Board size in game units

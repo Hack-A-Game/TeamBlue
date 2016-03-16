@@ -76,7 +76,7 @@ MonoBehaviour:
   attack: 25
   ele: 1
   unitName: Laser Novel
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300062, guid: a147d98f65ec44867b8113d192c7258b, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936
 SpriteRenderer:

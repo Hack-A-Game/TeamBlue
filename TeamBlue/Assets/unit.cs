@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class unit : MonoBehaviour {
+public class Unit : MonoBehaviour {
 	private int attack;
 	private int hp;
 	private int maxHp;

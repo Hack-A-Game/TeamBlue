@@ -2,7 +2,16 @@
 using System.Collections;
 
 public class Board : MonoBehaviour {
-    public int maxCards = 8;
+    
+
+	// Human player
+	public const int PLAYER1 = 0;
+	// CPU Player
+	public const int PLAYER2 = 1;
+
+
+
+	public int maxCards = 8;
 
     // Board size in game units
     public float boardSize = 8;
@@ -17,6 +26,8 @@ public class Board : MonoBehaviour {
         usedSlots = 0;
         slots = new GameObject[maxCards];
         cardPlayerID = new int[maxCards];
+		for (int i = 0; i < maxCards; i++)
+			cardPlayerID[i] = -1;
 	}
 
     // Move cards to 
@@ -80,6 +91,50 @@ public class Board : MonoBehaviour {
     public GameObject[] getAllCards() {
         return slots;
     }
+
+
+	public bool canAttack(int player, int pos){
+		if (player == PLAYER1 && cardPlayerID[pos] == PLAYER1 && pos + 1 < cardPlayerID.Length && cardPlayerID [pos + 1] == PLAYER2) {
+			return true;
+		}
+		if (player == 1 && cardPlayerID[pos] == PLAYER2 && pos - 1 > 0 && cardPlayerID [pos - 1] == 0) {
+			return true;
+		}
+		return false;
+	}
+
+
+	public bool attack(GameObject attacker, GameObject defender){
+		int dmg = (defender.GetComponent<Unit>()).getDamageAgainst (attacker);
+		return (defender.GetComponent<Unit>()).damage (dmg);
+
+	}
+
+	public void killPosition(int position){
+		popCard (position);
+	}
+
+
+	public void findPossibleAttaks(int attacker){
+		for (int i = 0; i < cardPlayerID.Length; i++) {
+			if (canAttack(attacker, i)){
+				int offset = (attacker == PLAYER1) ? 1 : -1;
+				Debug.Log ("Player " + attacker + " attacking with unit in pos: "+i);
+				if (attack (slots [i], slots [i + offset])) {
+					killPosition (i+offset);
+				};
+				break;
+			}
+		}
+	}
+
+	public void attackPhase(int attacker){
+
+		findPossibleAttaks (attacker);
+		attacker = (attacker == 0) ? 1:0;
+		findPossibleAttaks (attacker);
+
+	}
 
 	
 	// Update is called once per frame

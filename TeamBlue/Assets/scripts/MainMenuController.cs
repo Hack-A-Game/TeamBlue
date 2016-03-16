@@ -15,7 +15,7 @@ public class MainMenuController : MonoBehaviour {
 
 	public void NewGameButton(){
 		Debug.Log ("NEW GAME");
-		Application.LoadLevel("Game");
+		Application.LoadLevel("demo/GameScene");
 
 	}
 

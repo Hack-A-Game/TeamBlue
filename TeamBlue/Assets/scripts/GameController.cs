@@ -92,7 +92,9 @@ public class GameController : MonoBehaviour {
 		 *  PostTurn Actions
 		 */
 
+		// Repaint the cards
 		uiController.updateCards();
+		board.attackPhase (0);
 		board.repositionCards();
 
 

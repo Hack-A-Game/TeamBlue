@@ -26,7 +26,7 @@ public class Board : MonoBehaviour {
 
 	}
 
-    // Called after changing cards in the board
+    // Move cards to 
     public void repositionCards() {
         float step = boardSize / maxCards;
 
@@ -36,8 +36,9 @@ public class Board : MonoBehaviour {
                 continue;
 
             GameObject card = slots[i];            
-            var pos = card.transform.position;
-            card.transform.position = new Vector3(0, cardPos, 0);
+            var xPos = transform.position.x;
+            float yPos = transform.position.y - boardSize / 2 + cardPos;
+            card.transform.position = new Vector3(xPos, yPos, 0);
 
             Debug.Log("Placed card" + card.ToString() + "at pos" + cardPos);
 

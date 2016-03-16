@@ -75,8 +75,14 @@ MonoBehaviour:
   health: 125
   attack: 50
   ele: 1
+<<<<<<< HEAD
   unitName: Laser Novel
   cardTexture: {fileID: 21300062, guid: a147d98f65ec44867b8113d192c7258b, type: 3}
+=======
+  us: 2
+  unitName: Laser Hard
+  cardTexture: {fileID: 0}
+>>>>>>> issound
   prefab: {fileID: 156686}
 --- !u!212 &21202936
 SpriteRenderer:

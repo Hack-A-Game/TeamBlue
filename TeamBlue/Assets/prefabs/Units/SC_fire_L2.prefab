@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11496768}
   - 95: {fileID: 9591154}
   m_Layer: 0
-  m_Name: SC_fire_L3
+  m_Name: SC_fire_L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,13 +70,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2682d601925522246b5c859818eb29ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 27
-  cost: 3
-  health: 125
+  ID: 24
+  cost: 2
+  health: 75
   attack: 50
   ele: 1
   unitName: Laser Novel
-  cardTexture: {fileID: 0}
+  cardTexture: {fileID: 21300062, guid: a147d98f65ec44867b8113d192c7258b, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936
 SpriteRenderer:

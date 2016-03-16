@@ -49,7 +49,7 @@ public class Unit : MonoBehaviour {
 
 	public bool damage(int damage)
 	{
-		healthBar.transform.localScale = new Vector3(hp / (float)maxHp, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+		healthBar.transform.localScale = new Vector3((float) hp / (float)maxHp, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
 		hp -= damage;
 		if (hp < 0)
 		{
@@ -57,4 +57,8 @@ public class Unit : MonoBehaviour {
 		}
 		else return false;
 	}
+
+    void OnDestroy() {
+        Destroy(healthBar);
+    }
 }

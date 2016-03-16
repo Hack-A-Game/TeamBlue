@@ -40,7 +40,7 @@ Animator:
   m_GameObject: {fileID: 156686}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3db5263a2874f584d909dbfc14309e5e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   attack: 50
   ele: 2
   unitName: Super Cuernos
-  cardTexture: {fileID: 21300002, guid: a57aa7739d767064e9a2d6502682e8c5, type: 3}
+  cardTexture: {fileID: 21300002, guid: 945adb486f586b04ca45579d08813fee, type: 3}
   prefab: {fileID: 156686}
 --- !u!212 &21202936
 SpriteRenderer:
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: a57aa7739d767064e9a2d6502682e8c5, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 945adb486f586b04ca45579d08813fee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -51,8 +51,8 @@ public class GameController : MonoBehaviour
 		cpuHand = new List<Card>();
 		for (int i = 0; i < 3; i++)
 		{
-			playerHand.Add(deckBuilder.nextCard());
-			cpuHand.Add(deckBuilder.nextCard());
+			playerHand.Add(deckBuilder.nextCardSF());
+			cpuHand.Add(deckBuilder.nextCardSP());
 		}
 
 		uiController.updateCards();
@@ -156,10 +156,12 @@ public class GameController : MonoBehaviour
 		case PLAYER1:
 			unit = (GameObject)Instantiate(playerHand[cardIndex].prefab, Vector3.zero, Quaternion.identity);
 			cardPos = 0;
+
+                unit.GetComponent<Animator>().SetTrigger("change");
 			
 			// Delete card from hand and draw new card
 			playerHand.RemoveAt(cardIndex);
-			playerHand.Add(deckBuilder.nextCard());
+			playerHand.Add(deckBuilder.nextCardSF());
 			break;
 		case PLAYER2:
 			unit = (GameObject)Instantiate(cpuHand[cardIndex].prefab, Vector3.zero, Quaternion.identity);
@@ -167,7 +169,7 @@ public class GameController : MonoBehaviour
 			
 			// Delete card from hand and draw new card
 			cpuHand.RemoveAt(cardIndex);
-			cpuHand.Add(deckBuilder.nextCard());
+			cpuHand.Add(deckBuilder.nextCardSP());
 			break;
 		}
 		

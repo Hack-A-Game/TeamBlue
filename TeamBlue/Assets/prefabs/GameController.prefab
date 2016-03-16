@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.94, y: -0.49, z: 0}
+  m_LocalPosition: {x: 4.5647836, y: 0.38138443, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41,6 +41,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1fa410a621c1e4892ad3544e0a055e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxTurns: 20
+  uiController: {fileID: 0}
+  board: {fileID: 0}
+  action: 0
 --- !u!114 &11444036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,6 +56,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67227a24119764408a4a793399ae497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardProbabilities:
+  - unit: {fileID: 156686, guid: c6f2fe08f7ad9284a9cfdffd4ad55532, type: 2}
+    prob: 2
+  - unit: {fileID: 156686, guid: f30d681ee776a48faa8fc8255e0fc91c, type: 2}
+    prob: 2
 --- !u!212 &21210766
 SpriteRenderer:
   m_ObjectHideFlags: 1
